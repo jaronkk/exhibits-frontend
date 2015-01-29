@@ -1,0 +1,23 @@
+# Store non-sensitive configuration settings here.  Acessible from Rails.configuration.settings
+defaults: &defaults
+
+local: &local
+  <<: *defaults
+  beehive_url: 'http://localhost:3018'
+
+vm: &vm
+  <<: *defaults
+
+development:
+  <<: *local
+
+test:
+  <<: *local
+
+pre_production:
+  <<: *vm
+  beehive_url: https://beehivepprd.library.nd.edu
+
+production:
+  <<: *vm
+  beehive_url: https://beehive.library.nd.edu
