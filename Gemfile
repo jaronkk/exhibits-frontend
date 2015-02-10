@@ -27,6 +27,8 @@ gem 'faraday'
 gem 'faraday_middleware'
 gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 
+gem 'bootstrap-sass', '~> 3.3.3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

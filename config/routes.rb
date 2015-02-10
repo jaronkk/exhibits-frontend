@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :exhibits
+  resources :exhibits, only: [:index, :show]
+
+  root 'exhibits#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
