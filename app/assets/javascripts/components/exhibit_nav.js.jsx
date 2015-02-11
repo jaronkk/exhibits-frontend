@@ -15,10 +15,16 @@ var ExhibitNav = React.createClass({
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
+            <ExhibitLink className="navbar-brand" exhibit={exhibit} />
+          </div>
+          <div className="collapse navbar-collapse">
+            <ul className="nav navbar-nav navbar-right">
+              <li>
+                <ExhibitLink exhibit={exhibit} path="items" title="Browse the Collection" />
+              </li>
+            </ul>
           </div>
         </div>
-
-        <ExhibitLink className="navbar-brand" exhibit={this.props.exhibit} />
       </nav>
     );
   }
