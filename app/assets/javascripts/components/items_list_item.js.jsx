@@ -14,9 +14,11 @@ var ItemsListItem = React.createClass({
     var url = "items/" + encodeURIComponent(item['@id']);
     return (
       <div className="well items-list-item">
-        {thumbnail}
-        <br />
-        <a href={url}>{item.name}</a>
+        <a href={url}>
+          {thumbnail}
+          <br />
+          {item.name}
+        </a>
       </div>
     );
   }
