@@ -14,6 +14,8 @@ var ItemShow = React.createClass({
         <h1>{item.name}</h1>
         <div className="row">
           <div className="col-md-5 well">
+            <h3>Metadata</h3>
+            <MetadataList metadata={item.metadata} />
           </div>
           <div className="col-md-7">
             {viewerNode}
