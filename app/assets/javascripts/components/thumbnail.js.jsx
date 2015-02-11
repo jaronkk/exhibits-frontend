@@ -6,6 +6,12 @@ var Thumbnail = React.createClass({
     ]),
   },
 
+  getDefaultProps: function() {
+    return {
+      thumbnailType: 'small',
+    }
+  },
+
   getInitialState: function() {
     return {
       image: null,
@@ -14,7 +20,7 @@ var Thumbnail = React.createClass({
 
   componentDidMount: function() {
     $.get(this.props.image, function(result) {
-      var imageObject = result['thumbnail/small'];
+      var imageObject = result['thumbnail/' + this.props.thumbnailType];
       if (!imageObject) {
         imageObject = result;
       }

@@ -4,9 +4,18 @@ var ShowcasesListItem = React.createClass({
   },
 
   render: function() {
+    var showcase = this.props.showcase;
+    var thumbnail;
+    if (showcase['hasPart/item']) {
+      thumbnail = (
+        <ShowcasesListItemThumbnail itemUrl={showcase['hasPart/item']} />
+      );
+    }
     return (
       <div className="well showcases-list-item">
-        {this.props.showcase.name}
+        {thumbnail}
+        <br />
+        {showcase.name}
       </div>
     );
   }
