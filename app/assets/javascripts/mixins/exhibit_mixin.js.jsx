@@ -1,11 +1,13 @@
-var ExhibitShow = React.createClass({
+/** @jsx React.DOM */
+
+var ExhibitMixin = {
   propTypes: {
     exhibit_url: React.PropTypes.string.isRequired,
   },
 
   getInitialState: function() {
     return {
-      exhibit: {},
+      exhibit: {}
     };
   },
 
@@ -17,13 +19,4 @@ var ExhibitShow = React.createClass({
     }.bind(this));
   },
 
-  render: function() {
-    var exhibit = this.state.exhibit;
-    return (
-      <div className="exhibit-show">
-        <ExhibitNav exhibit={exhibit} />
-        {exhibit.name}
-      </div>
-    );
-  }
-});
+};
