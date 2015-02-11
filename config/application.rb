@@ -24,5 +24,7 @@ module Exhibits
     config.active_record.raise_in_transactional_callbacks = true
 
     config.autoload_paths += [ Rails.root.join('app', 'services').to_s ]
+
+    config.react.addons = true
   end
 end
