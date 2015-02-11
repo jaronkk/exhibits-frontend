@@ -10,7 +10,7 @@ var ExhibitsList = React.createClass({
   },
 
   componentDidMount: function() {
-    $.get(this.props.exhibits_url, function(result) {
+    $.get(this.props.exhibitsUrl, function(result) {
       this.setState({
         exhibits: result,
       })

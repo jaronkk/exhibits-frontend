@@ -1,20 +1,20 @@
 /** @jsx React.DOM */
 
-var ExhibitMixin = {
+var CollectionMixin = {
   propTypes: {
-    exhibitUrl: React.PropTypes.string.isRequired,
+    collectionUrl: React.PropTypes.string.isRequired,
   },
 
   getInitialState: function() {
     return {
-      exhibit: {}
+      collection: {}
     };
   },
 
   componentDidMount: function() {
-    $.get(this.props.exhibitUrl, function(result) {
+    $.get(this.props.collectionUrl, function(result) {
       this.setState({
-        exhibit: result,
+        collection: result,
       })
     }.bind(this));
   },
