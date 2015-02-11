@@ -4,17 +4,19 @@ var ItemsListItem = React.createClass({
   },
 
   render: function() {
+    var item = this.props.item;
     var thumbnail;
-    if (this.props.item.image) {
+    if (item.image) {
       thumbnail = (
-        <Thumbnail image={this.props.item.image} />
+        <Thumbnail image={item.image} />
       );
     }
+    var url = "items/" + encodeURIComponent(item['@id']);
     return (
       <div className="well items-list-item">
         {thumbnail}
         <br />
-        {this.props.item.name}
+        <a href={url}>{item.name}</a>
       </div>
     );
   }
