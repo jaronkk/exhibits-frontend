@@ -18,12 +18,21 @@ var ItemsList = React.createClass({
   },
 
   render: function() {
-    var itemNodes = this.state.items.map(function(item) {
-      return (
+    var itemNodes = this.state.items.map(function(item, index) {
+      var nodes = [];
+      if (index > 0) {
+        if (index%3 == 0) {
+          nodes.push ((
+            <div className="clearfix"></div>
+          ));
+        }
+      }
+      nodes.push((
         <div className="col-sm-4" key={item['@id']}>
           <ItemsListItem item={item} />
         </div>
-      );
+      ));
+      return nodes;
     });
     return (
       <div className="row items-list">
