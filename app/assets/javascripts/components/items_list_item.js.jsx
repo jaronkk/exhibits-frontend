@@ -5,7 +5,7 @@ var ItemsListItem = React.createClass({
 
   render: function() {
     return (
-      <div className="items-list-item">
+      <div className="well items-list-item">
         {this.props.item.name}
       </div>
     );

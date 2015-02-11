@@ -7,7 +7,7 @@ var ExhibitShow = React.createClass({
       <div className="exhibit-show">
         <ExhibitNav exhibit={exhibit} />
         <div className="container">
-          {exhibit.name}
+          <h1>{exhibit.name}</h1>
         </div>
       </div>
     );

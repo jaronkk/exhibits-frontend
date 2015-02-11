@@ -5,7 +5,7 @@ var ExhibitsListItem = React.createClass({
 
   render: function() {
     return (
-      <div className="exhibits-list-item">
+      <div className="well exhibits-list-item">
         <ExhibitLink exhibit={this.props.exhibit} />
       </div>
     );

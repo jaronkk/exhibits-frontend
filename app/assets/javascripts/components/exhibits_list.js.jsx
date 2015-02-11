@@ -20,12 +20,18 @@ var ExhibitsList = React.createClass({
   render: function() {
     var exhibitNodes = this.state.exhibits.map(function(exhibit) {
       return (
-        <ExhibitsListItem key={exhibit['@id']} exhibit={exhibit} />
+        <div className="col-sm-4" key={exhibit['@id']}>
+          <ExhibitsListItem exhibit={exhibit} />
+        </div>
       );
     });
     return (
       <div className="exhibits-list">
-        {exhibitNodes}
+        <div className="container">
+          <div className="row">
+            {exhibitNodes}
+          </div>
+        </div>
       </div>
     );
   }
