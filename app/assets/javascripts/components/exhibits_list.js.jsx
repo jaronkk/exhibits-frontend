@@ -1,6 +1,6 @@
 var ExhibitsList = React.createClass({
   propTypes: {
-    exhibits_url: React.PropTypes.string.isRequired,
+    exhibitsUrl: React.PropTypes.string.isRequired,
   },
 
   getInitialState: function() {
