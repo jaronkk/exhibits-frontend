@@ -25,12 +25,24 @@
   top: 50%;
   padding-left: 2em;
   padding-right: 2em;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 90%;
   white-space: normal;
   color: #fff;
+  h1 {
+    font-size:50px;
+    font-family: GPCBold,"HelveticaNeue",Helvetica,Arial,Verdana,sans-serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45);
+    text-transform: uppercase;
+    background: image_url('hr.png') bottom center no-repeat;
+    padding-bottom:20px;
+  }
+  p {
+    font-size:28px;
+    font-family: Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45);
+  }
 }
 
 .showcase-scroll-sections {
