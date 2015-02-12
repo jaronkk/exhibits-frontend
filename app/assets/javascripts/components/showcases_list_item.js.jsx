@@ -11,11 +11,14 @@ var ShowcasesListItem = React.createClass({
         <ShowcasesListItemThumbnail itemUrl={showcase['hasPart/item']} />
       );
     }
+    var url = location.pathname + "/showcases/" + encodeURIComponent(showcase['@id']);
     return (
       <div className="well showcases-list-item">
-        {thumbnail}
-        <br />
-        {showcase.name}
+        <a href={url}>
+          {thumbnail}
+          <br />
+          {showcase.name}
+        </a>
       </div>
     );
   }

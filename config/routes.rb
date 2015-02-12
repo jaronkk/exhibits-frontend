@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :exhibits, only: [:index, :show] do
     resources :items, only: [:index, :show]
+    resources :showcases, only: [:show]
   end
 
   root 'exhibits#index'
