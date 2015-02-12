@@ -5,9 +5,26 @@ var ShowcaseScrollSection = React.createClass({
 
   render: function() {
     var section = this.props.section;
+    var imageColumn;
+    if (section['hasPart/item']) {
+      imageColumn = (
+        <div className="showcase-scroll-section-column">
+          <ShowcaseScrollSectionItem itemUrl={section['hasPart/item']} />
+        </div>
+      )
+    }
+    var textColumn;
+    if (section.description) {
+      textColumn = (
+        <div className="showcase-scroll-section-column">
+          <ShowcaseScrollSectionText name={section.name} description={section.description} />
+        </div>
+      )
+    }
     return (
       <div className="showcase-scroll-section">
-        <h2>{section.name}</h2>
+        {imageColumn}
+        {textColumn}
       </div>
     );
   }
