@@ -59,3 +59,22 @@
     width: auto;
   }
 }
+
+.showcase-scroll-section-text {
+  background:rgba(0,0,0,.86);
+  color:#fff;
+
+  white-space: normal;
+  max-width: 640px;
+  padding:1em;
+  height: 100%;
+
+  .showcase-scroll-section-text-frame {
+    height:100%;
+    overflow: hidden;
+    overflow-y:auto;
+    position: relative;
+    -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
+  }
+}
