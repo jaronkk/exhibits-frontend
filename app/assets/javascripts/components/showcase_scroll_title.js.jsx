@@ -8,7 +8,7 @@ var ShowcaseScrollTitle = React.createClass({
     return (
       <div className="showcase-scroll-title">
         <h1>{showcase.name}</h1>
-        <p>{showcase.description}</p>
+        <div dangerouslySetInnerHTML={{__html: showcase.description}}></div>
       </div>
     );
   }
