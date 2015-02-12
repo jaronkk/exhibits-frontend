@@ -1,0 +1,45 @@
+.showcase-scroll-container {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.showcase-scroll {
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+  box-sizing: border-box;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #777;
+}
+
+
+.showcase-scroll-title {
+  float: left;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  padding-left: 2em;
+  padding-right: 2em;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 90%;
+  white-space: normal;
+  color: #fff;
+}
+
+.showcase-scroll-sections {
+  height: 100%;
+}
+
+.showcase-scroll-section {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1.5em;
+  height: 96%;
+}

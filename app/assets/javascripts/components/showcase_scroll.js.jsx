@@ -10,9 +10,11 @@ var ShowcaseScroll = React.createClass({
       );
     }
     return (
-      <div className="showcase-scroll">
-        <ShowcaseScrollTitle showcase={showcase} />
-        {sectionsNode}
+      <div className="showcase-scroll-container">
+        <div className="showcase-scroll">
+          <ShowcaseScrollTitle showcase={showcase} />
+          {sectionsNode}
+        </div>
       </div>
     );
   }
