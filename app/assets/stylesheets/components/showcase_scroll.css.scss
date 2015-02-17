@@ -47,6 +47,10 @@
 
 .showcase-scroll-sections {
   height: 100%;
+  max-height: 820px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
 }
 
 .showcase-scroll-section {

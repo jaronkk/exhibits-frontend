@@ -18,7 +18,7 @@ var ExhibitsList = React.createClass({
   },
 
   render: function() {
-    var exhibitNodes = this.state.exhibits.map(function(exhibit) {
+    var exhibitNodes = this.state.exhibits.map(function(exhibit, index) {
       var nodes = [];
       if (index > 0) {
         if (index%3 == 0) {
@@ -32,6 +32,7 @@ var ExhibitsList = React.createClass({
           <ExhibitsListItem exhibit={exhibit} />
         </div>
       ));
+      return nodes;
     });
     return (
       <div className="exhibits-list">
