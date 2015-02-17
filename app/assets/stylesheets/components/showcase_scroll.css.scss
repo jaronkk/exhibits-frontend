@@ -25,6 +25,7 @@
   top: 50%;
   padding-left: 2em;
   padding-right: 2em;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 90%;
   white-space: normal;
@@ -49,6 +50,7 @@
   height: 100%;
   max-height: 820px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: relative;
 }
